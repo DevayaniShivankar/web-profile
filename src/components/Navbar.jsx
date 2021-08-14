@@ -14,7 +14,7 @@ const navigation = [
   }
 
 function Navbar() {
-    return(<Disclosure as="nav" className="bg-purple-2">
+    return(<Disclosure as="nav" className="nav-bg">
     {({ open }) => (
       <>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -26,17 +26,17 @@ function Navbar() {
                 {open ? (
                   <XIcon className="block h-6 w-6" aria-hidden="true" />
                 ) : (
-                  <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                  <MenuIcon className="text-dark-grey block h-6 w-6" aria-hidden="true" />
                 )}
               </Disclosure.Button>
             </div>
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex-shrink-0 flex items-center">
                 <h1
-                  className="block lg:hidden h-8 w-auto text-white font-bold text-2xl"                  
+                  className="block lg:hidden h-8 w-auto text-dark-grey font-bold text-lg"                  
                 >DEVAYANI SHIVANKAR</h1>
                 <h1
-                  className="hidden lg:block h-8 w-auto text-white font-bold text-2xl"
+                  className="hidden lg:block h-8 w-auto text-dark-grey font-bold text-2xl"
                 >DEVAYANI SHIVANKAR</h1>
               </div>
               <div className="hidden md:block md:ml-6">
@@ -46,7 +46,7 @@ function Navbar() {
                       key={item.name}
                       href={item.href}
                       className={classNames(
-                        item.current ? 'text-purple-4' : 'text-white hover:text-purple-4',
+                        item.current ? 'text-purple-4' : 'text-dark-grey hover:text-purple-4',
                         'px-3 py-2 rounded-md text-xl font-medium'
                       )}
                       aria-current={item.current ? 'page' : undefined}
@@ -58,11 +58,10 @@ function Navbar() {
               </div>
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <button className="bg-purple-1 p-1 rounded-full text-grey-purple hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                <BellIcon className="h-6 w-6" aria-hidden="true" />
+              <button className="p-1 rounded-full text-grey-purple hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                <BellIcon className="text-dark-grey h-6 w-6" aria-hidden="true" />
               </button>
 
-              {/* Profile dropdown */}
               <Menu as="div" className="ml-3 relative">
                 {/* <div>
                   <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -81,15 +80,15 @@ function Navbar() {
                   enterTo="transform opacity-100 scale-100"
                   leave="transition ease-in duration-75"
                   leaveFrom="transform opacity-100 scale-100"
-                  leaveTo="transform opacity-0 scale-95"
-                >
-                 
+                  leaveTo="transform opacity-0 scale-95">
+
                 </Transition>
               </Menu>
             </div>
           </div>
         </div>
 
+       
         <Disclosure.Panel className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navigation.map((item) => (
@@ -97,8 +96,8 @@ function Navbar() {
                 key={item.name}
                 href={item.href}
                 className={classNames(
-                  item.current ? 'text-purple-4' : 'text-white hover:text-purple-4',
-                  'block px-3 py-2 rounded-md text-base font-medium'
+                  item.current ? 'text-purple-4' : 'text-dark-grey hover:text-purple-4',
+                  'block px-3 py-2 rounded-md text-base font-medium border-2 border-dark-grey'
                 )}
                 aria-current={item.current ? 'page' : undefined}
               >
@@ -107,6 +106,7 @@ function Navbar() {
             ))}
           </div>
         </Disclosure.Panel>
+       
       </>
     )}
   </Disclosure>)

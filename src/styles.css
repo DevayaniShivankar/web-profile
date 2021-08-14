@@ -19,7 +19,14 @@ body {
 
 .top-box {
   background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
-  height: 100%;
+}
+
+.top-box .heading2 {
+  color: var(--purple-4);
+}
+
+.nav-bg {
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
 }
 
 hr {
