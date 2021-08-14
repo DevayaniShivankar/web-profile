@@ -9,7 +9,8 @@ module.exports = {
       'purple-3': '#BE9FE1',
       'purple-4': '#BC6FF1',
       'grey-purple': '#F1F1F6',
-      'white' : '#F9FAFB'
+      'white' : '#F9FAFB',
+      'gray' : '#D1D5DB'
     }
   },
   variants: {
