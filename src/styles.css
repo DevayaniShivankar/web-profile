@@ -12,11 +12,12 @@
 
 body {
     background-color: var(--grey-purple);
+    font-family: 'Lato', sans-serif;
 }
 
 hr {
   border-style: none none dotted none; 
   width: 40px; margin: 40px auto; 
   border-width: 10px; 
-  border-color: var(--purple-1);
+  border-color: var(--grey-purple);
 }
