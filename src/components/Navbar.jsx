@@ -39,15 +39,15 @@ function Navbar() {
                   className="hidden lg:block h-8 w-auto text-white font-bold text-2xl"
                 >DEVAYANI SHIVANKAR</h1>
               </div>
-              <div className="hidden sm:block sm:ml-6">
+              <div className="hidden md:block md:ml-6">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
                       className={classNames(
-                        item.current ? 'bg-purple-1 text-white' : 'text-white hover:text-gray',
-                        'px-3 py-2 rounded-md text-lg font-medium'
+                        item.current ? 'text-purple-4' : 'text-white hover:text-purple-4',
+                        'px-3 py-2 rounded-md text-xl font-medium'
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >
@@ -90,14 +90,14 @@ function Navbar() {
           </div>
         </div>
 
-        <Disclosure.Panel className="sm:hidden">
+        <Disclosure.Panel className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 className={classNames(
-                  item.current ? 'bg-purple-1 text-white' : 'text-white hover:text-purple-1',
+                  item.current ? 'text-purple-4' : 'text-white hover:text-purple-4',
                   'block px-3 py-2 rounded-md text-base font-medium'
                 )}
                 aria-current={item.current ? 'page' : undefined}

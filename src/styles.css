@@ -7,12 +7,19 @@
     --purple-2: #C9B6E4;
     --purple-3: #BE9FE1;
     --purple-4: #BC6FF1;
-    --grey-purple: #F1F1F6 ;
+    --grey-purple: #F1F1F6;
+    --dark-grey: #505050;
   }
 
 body {
     background-color: var(--grey-purple);
     font-family: 'Lato', sans-serif;
+    color: var(--dark-grey);
+  }
+
+.top-box {
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+  height: 100%;
 }
 
 hr {
