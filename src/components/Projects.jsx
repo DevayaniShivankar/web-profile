@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "./Box";
-import Carousel from "./Carousel"
+import Carousel from "./ProjectBox";
 
 function Projects() {
     return(
