@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 function IconScroll () {
